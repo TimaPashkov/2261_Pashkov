@@ -48,34 +48,7 @@ print (*l, **d)
 ['Anna', 'Barbara', 'Clara', 'Diana', 'Eva', 'Flora']
 ```
 
-*Решение*
 
-```python
-def sublist(lst, *positions):
-    result = []
-    for i in positions:
-        result.append(lst[i])
-    return result
-```
-
-Проверка:
-
-```python
-lst = ['Anna', 'Barbara', 'Clara', 'Diana', 'Eva', 'Flora']
-print(sublist(lst, 0, 2, 5))
-print(sublist(lst))
-print(sublist(lst, 0, 1, 2, 3, 4, 5))
-```
-
-Результат:
-
-```
-['Anna', 'Clara', 'Flora']
-[]
-['Anna', 'Barbara', 'Clara', 'Diana', 'Eva', 'Flora']
-```
-
-`*positions` собирает все номера позиций, которые передали после списка, в один кортеж. Если номеров нет, кортеж пустой, цикл не выполнится и вернётся пустой список. Работает и с кортежами, например `sublist(('a', 'b', 'c'), 2, 0)` вернёт `['c', 'a']`.
 
 ---
 ### Задание 3 **(1)**
