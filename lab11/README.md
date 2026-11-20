@@ -61,7 +61,7 @@ int main(void) {
 
 **Решение**
 
-```
+```cpp
 #include <iostream>
 
 void dswap(double &x, double &y) {
