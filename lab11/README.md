@@ -81,7 +81,7 @@ dosome({1, 2, 3});
 
 **Решение**
 
-```
+```cpp
 #include <iostream>
 #include <vector>
 
