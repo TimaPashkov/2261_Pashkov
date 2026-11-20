@@ -21,6 +21,8 @@ int main() {
 
 **Решение**
 
+![01](01/01.png)
+
 ```cpp
 int bar(int x);
 
