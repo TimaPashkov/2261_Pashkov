@@ -34,7 +34,7 @@
 
 **Решение**
 
-``cpp
+```cpp
 #include <iostream>
 
 class box{
@@ -63,7 +63,7 @@ int main(){
     std::cout << "Volume = " << a.volume() << std::endl;
     std::cout << "Surface = " << a.surface() << std::endl;
 }
-``
+```
 
 ### Задание 3 **(2)**
 
