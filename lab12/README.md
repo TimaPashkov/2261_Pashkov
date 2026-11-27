@@ -217,7 +217,7 @@ private :
 точки. 
 
 Напишите программу для проверки работы методов.*
-**cpp
+```cpp
 class Point:
     def __init__(self, x, y):
         self.x = x
@@ -226,7 +226,8 @@ class Point:
         return '('+str(self.x)+', '+ str(self.y)+')'
     
 a = Point(10,5)
-print(a)**
+print(a)
+```
 
 ### Задание 8 **(2)**
 
@@ -238,7 +239,7 @@ print(a)**
 
 Напишите программу для проверки работы методов.*
 
-**cpp
+```cpp
 
 class Rectangle:
     def __init__(self,a,b):
@@ -250,7 +251,7 @@ class Rectangle:
                  
 r=Rectangle(Point(0,10), Point(10,0))
 print(r)
-**           
+```         
 
 ### Задание 9 **(2)**
 
@@ -259,6 +260,11 @@ print(r)
 определения класса, а в процессе работы программы.*
 
 *Проверьте работоспособность функции.*
+
+```cpp
+Rectangle.square = lambda self : abs((self.topleft.x-self.bottomright.x)*(self.topleft.x-self.bottomright.x))
+print(r.square())
+```
 
 ### Задание 10 **(2)**
 
